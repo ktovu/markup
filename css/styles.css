@@ -1,0 +1,337 @@
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+    font-family: Yeseva One;
+    src: url(../fonts/YesevaOne.otf);
+    font-family: Gentium Book Basic;
+    src: url(../fonts/gentium.ttf);
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans.ttf);
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  outline: 0;
+  box-shadow: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+}
+h3{
+    font: 36px 'Yeseva One';
+}
+a{
+    text-decoration: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/pattern.jpg);
+}
+header, section, footer{
+    width:1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+header .logo{
+    padding: 0 260px 0 175px;
+    cursor: pointer;
+}
+header .social{
+    padding-right: 175px;
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 21px;
+}
+header > .social a{
+    color: #e6b52c;
+}
+.divider{
+    margin: 24px 0 30px;
+}
+/*Main styles*/
+h1, h1 a{
+    text-transform: uppercase;
+    font: 36px 'Yeseva One';
+}
+
+nav{
+    width: 740px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav ul li{
+    height: 107px;
+    border-top: 3px solid transparent;
+    padding: 0 12px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+nav a{
+    text-transform: capitalize;
+    font-family: 'Gentium Book Basic';
+    font-size: 21px;
+}
+nav li:hover{
+    border-top: 3px solid #ccc9be; 
+}
+header{
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    color: white;
+    height: 110px;
+}
+/*Section 1*/
+section:nth-child(2){
+    padding: 240px 0 142px;
+    background-image: url(../img/Bg1.jpg);
+    background-size: cover;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+section:nth-child(2) h2{
+    font-size: 90px;
+    font-family: 'Yeseva One';
+    text-transform: lowercase;
+}
+section:nth-child(2) div:nth-child(2){
+    margin: 32px 0;
+}
+section:nth-child(2) button, section:nth-child(2) button:focus{
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 23px 52px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: white;
+    background-color:rgba(255, 255, 255, 0.3);
+}
+section:nth-child(2) button:hover{
+    border: 1px solid black;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+/*Section 2*/
+section:nth-child(3) > div:first-child{
+    margin: 100px 0 0 285px;
+    text-align: center;
+    font-size: 16px;
+}
+section:nth-child(3) > div:first-child > div:nth-child(2){
+    margin: 22px 0 32px 0;
+}
+section:nth-child(3) > div:first-child > div:nth-child(4){
+    margin: 52px 0 0 80px;
+}
+section:nth-child(3) > div:last-child{
+    margin: 55px 240px 0 0;
+}
+section:nth-child(3) h3{
+    color: #cc9900;
+}
+/*Section 3*/
+section:nth-child(4){
+    background-image: url(../img/Bg2.jpg);
+    background-size: cover;
+    color: white;
+}
+section:nth-child(4) > div{
+    margin: 100px 0 100px 815px;
+    padding: 85px 70px 78px;
+    background-color:rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+section:nth-child(4) > div > div:nth-child(4){
+    margin-top: 70px;
+}
+/*Section 4*/
+section:nth-child(5){
+    padding: 100px 0;
+    text-align: center;
+    justify-content: space-between;
+}
+section:nth-child(5) > div:first-child{
+    margin-left: 285px;
+}
+section:nth-child(5) > div:last-child{
+    margin-right: 285px;
+}
+section:nth-child(5) h3{
+    color: #cc9900;
+}
+.sheetMenu{
+    width: 430px;
+}
+.infoMenu{
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(204,153,0, 0.3);
+}
+.infoMenu div:first-child{
+    width: 70%;
+    text-align: left;
+}
+.infoMenu div:last-child{
+    width: 30%;
+    text-align: right;
+}
+.infoMenu h4{
+    font: 21px  'Yeseva One';
+    color: #cc9900;
+}
+.sheetMenu p{
+    margin-top: 5px;
+    text-align: left;
+}
+.posSheet{
+    margin-top: 25px;
+    padding: 5px
+}
+.posSheet.specialMenu{
+    margin-top: 0;
+}
+.specialMenu{
+    border: 1px solid rgba(204,153,0, 0.3);
+}
+.labelMenu{
+    text-align: right;
+}
+.labelMenu span{
+    background-color: rgba(204,153,0, 0.7);
+    padding: 0 5px;
+    color: white;
+    font-size: 14px;
+}
+section:nth-child(5) > div:nth-child(1) > div:nth-child(2), section:nth-child(5) > div:nth-child(2) > div:nth-child(2){
+    margin-top: 70px;
+}
+/*Section 5*/
+section:nth-child(6){
+    background-image: url(../img/Bg3.jpg);
+    background-size: cover;
+    color: #dde0df;
+    text-align: center;
+    padding: 100px 0 160px;
+}
+section:nth-child(6) > div{
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 85px 70px 100px;
+}
+section:nth-child(6) p{
+    font: bold 25px 'Gentium Book Basic';
+    line-height: 1.8;
+}
+section:nth-child(6) h6{
+    font-size: 18px;
+    margin-top: 45px;
+}
+/*Section 6*/
+section:nth-child(7){
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 0 100px;
+    color: #4c4c4c;
+}
+section:nth-child(7) h3{
+    color: #cc9900;
+}
+section:nth-child(7) p{
+    margin-bottom: 48px;
+}
+section:nth-child(7) .rowInput{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+section:nth-child(7) .colInput{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+section:nth-child(7) input{
+    width: 200px;
+    height: 38px;
+    font: italic 16px 'Open Sans';
+    color: #7c7c7c;
+    border: 1px solid #7c7c7c;
+}
+section:nth-child(7) input:focus{
+    border-color: #c9a131;
+    outline-color: none;
+}
+section:nth-child(7) span{
+    font: bold 14px 'Open Sans';
+    color: #c9a131;
+}
+section:nth-child(7) input[type="button"]{
+    background-color: #d7a21d;
+    border: 1px solid #d7a21d;
+    cursor: pointer;
+    font: inherit;
+    color: white;
+    margin: 0 auto;
+}
+
+section:nth-child(7) input[type="button"]:hover{
+    background-color: white;
+    color: #d7a21d;
+}
+section:nth-child(7) > div:first-child{
+    margin-left: 215px;
+}
+section:nth-child(7) > div:last-child{
+    margin-right: 285px;
+    margin-left: 100px;
+}
+
+/*Footer*/
+footer{
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    padding: 52px 0 72px;
+}
+footer a{
+    color: white;
+}
+footer h5{
+    font: 21px 'Yeseva One';
+}
+footer p{
+    font-family: 'Open Sans';
+}
+footer img{
+    margin: 21px 0;
+}
+footer > div:nth-child(1){
+    margin-left: 215px;
+}
+footer > div:nth-child(2) > div{
+    margin-top: 38px;
+}
+footer > div:nth-child(3) > div{
+    margin-top: 38px;
+}
