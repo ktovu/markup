@@ -65,9 +65,10 @@ header > .social a{
     margin: 24px 0 30px;
 }
 /*Main styles*/
-h1, h1 a{
+h1, h1 a, h1 a:focus, h1 a:hover{
     text-transform: uppercase;
     font: 36px 'Yeseva One';
+    color: white;
 }
 
 nav{
@@ -276,6 +277,7 @@ section:nth-child(7) input{
     font: italic 16px 'Open Sans';
     color: #7c7c7c;
     border: 1px solid #7c7c7c;
+    padding-left: 5px;
 }
 section:nth-child(7) input:focus{
     border-color: #c9a131;
@@ -294,9 +296,10 @@ section:nth-child(7) input[type="button"]{
     margin: 0 auto;
 }
 
-section:nth-child(7) input[type="button"]:hover{
+section:nth-child(7) input[type="button"]:hover, section:nth-child(7) input[type="button"]:focus{
     background-color: white;
     color: #d7a21d;
+    outline-color: transparent;
 }
 section:nth-child(7) > div:first-child{
     margin-left: 215px;
@@ -335,3 +338,25 @@ footer > div:nth-child(2) > div{
 footer > div:nth-child(3) > div{
     margin-top: 38px;
 }
+
+
+
+/*Input Date*/
+.superDate{
+    position: relative;
+}
+.iconDate{
+    position: absolute;
+    width: 26%!important;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 99;
+}
+.superDate i{
+    position: absolute;
+    right: 5px;
+    top: 12px;
+}
+
