@@ -1,13 +1,3 @@
-@font-face {
-    font-family: Lato;
-    src: url(../fonts/Lato-Regular.ttf);
-    font-family: Yeseva One;
-    src: url(../fonts/YesevaOne.otf);
-    font-family: Gentium Book Basic;
-    src: url(../fonts/gentium.ttf);
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans.ttf);
-}
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -47,19 +37,20 @@ header, section, footer{
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 header .logo{
     padding: 0 260px 0 175px;
     cursor: pointer;
 }
-header .social{
+.headerSocial_links{
     padding-right: 175px;
     width: 90px;
     display: flex;
     justify-content: space-around;
     font-size: 21px;
 }
-header > .social a{
+.headerSocial_links a{
     color: #e6b52c;
 }
 .divider{
@@ -103,8 +94,8 @@ header{
     color: white;
     height: 110px;
 }
-/*Section 1*/
-section:nth-child(2){
+/*Right_ingredients*/
+.secRight_ingredients{
     padding: 240px 0 142px;
     background-image: url(../img/Bg1.jpg);
     background-size: cover;
@@ -112,75 +103,120 @@ section:nth-child(2){
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-left: 285px;
+    padding-right: 285px;
 }
-section:nth-child(2) h2{
+.secRight_ingredients h2{
     font-size: 90px;
     font-family: 'Yeseva One';
     text-transform: lowercase;
 }
-section:nth-child(2) div:nth-child(2){
-    margin: 32px 0;
+.secRight_ingredients h2:after{
+    width: 100%;
+    height: 45px;
+    content: "";
+    background: url(../img/Decoration.png) no-repeat center center;
+    display: block;
+    margin-top: 20px;
 }
-section:nth-child(2) button, section:nth-child(2) button:focus{
+.secRight_ingredients--button{
+    display: flex;
+}
+.secRight_ingredients--button div{
     text-transform: uppercase;
     cursor: pointer;
     padding: 23px 52px;
     border: 1px solid rgba(255, 255, 255, 0.6);
-    color: white;
     background-color:rgba(255, 255, 255, 0.3);
+    margin: 32px 5px;
 }
-section:nth-child(2) button:hover{
+.secRight_ingredients--button a{
+    color: white;
+}
+.secRight_ingredients--button a:visited{
+    color: white;
+}
+.secRight_ingredients--button div:hover{
     border: 1px solid black;
     color: white;
     background-color:rgba(0, 0, 0, 0.7);
 }
-/*Section 2*/
-section:nth-child(3) > div:first-child{
-    margin: 100px 0 0 285px;
+/*Right_food*/
+.secRight_food{
+    padding: 100px 215px 40px;
+
+}
+.secRight_food--note{
+    padding: 62px 690px 0 0;
+    background-image: url(../img/dish.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
     text-align: center;
     font-size: 16px;
 }
-section:nth-child(3) > div:first-child > div:nth-child(2){
-    margin: 22px 0 32px 0;
+.secRight_food--note > p{
+    padding-bottom: 32px;
 }
-section:nth-child(3) > div:first-child > div:nth-child(4){
-    margin: 52px 0 0 80px;
-}
-section:nth-child(3) > div:last-child{
-    margin: 55px 240px 0 0;
-}
-section:nth-child(3) h3{
+.secRight_food--note h3{
     color: #cc9900;
 }
+.secRight_food--note h3:after{
+    width: 100%;
+    height: 30px;
+    content: "";
+    background: url(../img/Divider.png) no-repeat center center;
+    display: block;
+    padding: 20px 0 32px;
+}
+.secRight_food--img{
+    padding-left: 70px;
+}
 /*Section 3*/
-section:nth-child(4){
+.secFine_ingredients{
     background-image: url(../img/Bg2.jpg);
     background-size: cover;
     color: white;
+    padding: 100px 100px 100px 815px;
 }
-section:nth-child(4) > div{
-    margin: 100px 0 100px 815px;
+.secFine_ingredients--note{
     padding: 85px 70px 78px;
     background-color:rgba(0, 0, 0, 0.7);
     text-align: center;
 }
-section:nth-child(4) > div > div:nth-child(4){
-    margin-top: 70px;
+.secFine_ingredients--note h3:after{
+    width: 100%;
+    height: 30px;
+    content: "";
+    background: url(../img/Divider2.png) no-repeat center center;
+    display: block;
+    padding: 20px 0 32px;
+}
+.secFine_ingredients--img{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.secFine_ingredients--img img{
+    border-radius: 100px;
+    border: 5px solid rgba(255, 255, 255, 0.1);
 }
 /*Section 4*/
-section:nth-child(5){
-    padding: 100px 0;
+.secMenu{
+    padding: 100px 285px;
     text-align: center;
     justify-content: space-between;
 }
-section:nth-child(5) > div:first-child{
-    margin-left: 285px;
-}
-section:nth-child(5) > div:last-child{
-    margin-right: 285px;
-}
-section:nth-child(5) h3{
+.secMenu h3{
     color: #cc9900;
+}
+.secMenu h3:after{
+    width: 100%;
+    height: 30px;
+    content: "";
+    background: url(../img/Divider.png) no-repeat center center;
+    display: block;
+    padding: 20px 0 32px;
 }
 .sheetMenu{
     width: 430px;
@@ -207,7 +243,7 @@ section:nth-child(5) h3{
     text-align: left;
 }
 .posSheet{
-    margin-top: 25px;
+    margin-bottom: 5px;
     padding: 5px
 }
 .posSheet.specialMenu{
@@ -229,50 +265,58 @@ section:nth-child(5) > div:nth-child(1) > div:nth-child(2), section:nth-child(5)
     margin-top: 70px;
 }
 /*Section 5*/
-section:nth-child(6){
+.secGuest_rev{
     background-image: url(../img/Bg3.jpg);
     background-size: cover;
     color: #dde0df;
     text-align: center;
-    padding: 100px 0 160px;
+    padding: 100px 392px 160px;
 }
-section:nth-child(6) > div{
+.secGuest_rev > div{
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     padding: 85px 70px 100px;
 }
-section:nth-child(6) p{
+.secGuest_rev p{
     font: bold 25px 'Gentium Book Basic';
     line-height: 1.8;
 }
-section:nth-child(6) h6{
+.secGuest_rev h6{
     font-size: 18px;
     margin-top: 45px;
 }
 /*Section 6*/
-section:nth-child(7){
+.secBook_a_table{
     justify-content: space-between;
     text-align: center;
-    padding: 40px 0 100px;
+    padding: 40px 285px 100px 215px;
     color: #4c4c4c;
 }
-section:nth-child(7) h3{
+.secBook_a_table--bookForm h3{
     color: #cc9900;
 }
-section:nth-child(7) p{
+.secBook_a_table--bookForm h3:after{
+    width: 100%;
+    height: 30px;
+    content: "";
+    background: url(../img/Divider.png) no-repeat center center;
+    display: block;
+    padding: 20px 0 32px;
+}
+.secBook_a_table--bookForm p{
     margin-bottom: 48px;
 }
-section:nth-child(7) .rowInput{
+.secBook_a_table--bookForm .rowInput{
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-section:nth-child(7) .colInput{
+.secBook_a_table--bookForm .colInput{
     display: flex;
     flex-direction: column;
     text-align: left;
 }
-section:nth-child(7) input{
+.secBook_a_table--bookForm input{
     width: 200px;
     height: 38px;
     font: italic 16px 'Open Sans';
@@ -280,15 +324,15 @@ section:nth-child(7) input{
     border: 1px solid #7c7c7c;
     padding-left: 5px;
 }
-section:nth-child(7) input:focus{
+.secBook_a_table--bookForm input:focus{
     border-color: #c9a131;
     outline-color: none;
 }
-section:nth-child(7) span{
+.secBook_a_table--bookForm label{
     font: bold 14px 'Open Sans';
     color: #c9a131;
 }
-section:nth-child(7) input[type="button"]{
+.secBook_a_table--bookForm input[type="submit"]{
     background-color: #d7a21d;
     border: 1px solid #d7a21d;
     cursor: pointer;
@@ -297,17 +341,10 @@ section:nth-child(7) input[type="button"]{
     margin: 0 auto;
 }
 
-section:nth-child(7) input[type="button"]:hover, section:nth-child(7) input[type="button"]:focus{
+.secBook_a_table--bookForm input[type="submit"]:hover, .secBook_a_table--bookForm input[type="submit"]:focus{
     background-color: white;
     color: #d7a21d;
     outline-color: transparent;
-}
-section:nth-child(7) > div:first-child{
-    margin-left: 215px;
-}
-section:nth-child(7) > div:last-child{
-    margin-right: 285px;
-    margin-left: 100px;
 }
 
 /*Footer*/
@@ -316,7 +353,7 @@ footer{
     color: white;
     text-align: center;
     justify-content: space-between;
-    padding: 52px 0 72px;
+    padding: 52px 215px 72px;
 }
 footer a{
     color: white;
@@ -330,13 +367,10 @@ footer p{
 footer img{
     margin: 21px 0;
 }
-footer > div:nth-child(1){
-    margin-left: 215px;
-}
-footer > div:nth-child(2) > div{
+.secFooter--openingHours > div{
     margin-top: 38px;
 }
-footer > div:nth-child(3) > div{
+.secFooter--ourLocation > div{
     margin-top: 38px;
 }
 

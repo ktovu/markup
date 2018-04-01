@@ -6,83 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Restaurant_2</title>
     <link rel="stylesheet"  href="css/styles.css">
-    <link rel="stylesheet"  href="css/font-awesome.min.css">    
+    <link rel="stylesheet"  href="fonts/all/stylesheet.css">
+    <link rel="stylesheet"  href="css/font-awesome.min.css">  
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1><a href="#">Lambda</a></h1><!-- Достаточный было сделать ссылку "/", но так как это локально ставим заглушку -->
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li href="#"><a>Home</a></li>
-                    <li href="#"><a>About</a></li>
-                    <li href="#"><a>Ingredients</a></li>
-                    <li href="#"><a>Menu</a></li>
-                    <li href="#"><a>Rewiews</a></li>
-                    <li href="#"><a>Reservations</a></li>
-                </ul>           
-            </nav>
-        </div>
-        <div class="social">
+        <h1 class="logo">
+            <a href="#">Lambda</a>
+        </h1>
+        <nav>
+            <ul>
+                <li href="#"><a>Home</a></li>
+                <li href="#"><a>About</a></li>
+                <li href="#"><a>Ingredients</a></li>
+                <li href="#"><a>Menu</a></li>
+                <li href="#"><a>Rewiews</a></li>
+                <li href="#"><a>Reservations</a></li>
+            </ul>           
+        </nav>
+        <div class="headerSocial_links">
             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         </div>
     </header>
-    <section>
+    <section class="secRight_ingredients">
         <h2>the right ingredients<br/>for the right food</h2>
-        <div>
-            <img src="img/Decoration.png" alt="">
-        </div>
-        <div>
-            <button>book a table</button>
-            <button>see the menu</button>
+        <div class="secRight_ingredients--button">
+            <div>
+                <a href="#Book_a_table">book a table</a>
+            </div>
+            <div>
+                <a href="#See_the_menu">see the menu</a>
+            </div>
         </div>
         
     </section>
-    <section>
-        <div>
+    <section class="secRight_food">
+        <div class="secRight_food--note">
             <h3>Just the right food</h3>
-            <div class="divider">
-                <img src="img/Divider.png" alt="">
-            </div>
-            <div>
-                <p>If you’ve been to one of our restaurants, you’ve seen – and <br/>tasted – what keeps our customers coming back for more. <br/>Perfect materials and freshly baked food, delicious Lambda <br/>cakes,  muffins, and gourmet coffees make us hard to resist! <br/>Stop in today and check us out!</p>
-            </div>
-            <div>
+            <p>If you’ve been to one of our restaurants, you’ve seen – and <br/>
+                tasted – what keeps our customers coming back for more. <br/>
+                Perfect materials and freshly baked food, delicious Lambda <br/>
+                cakes,  muffins, and gourmet coffees make us hard to resist! <br/>
+                Stop in today and check us out!</p>
+            <div class="secRight_food--img">
                 <img src="img/cook.png" alt="">
             </div>
         </div>
-        <div>
-            <img src="img/dish.png" alt="">
-        </div>
     </section>
-    <section>
-        <div>
+    <section class="secFine_ingredients">
+        <div class="secFine_ingredients--note">
             <h3>Fine ingredients</h3>
-            <div class="divider">
-                <img src="img/Divider2.png" alt="">
-            </div>
             <div>
-                <p>If you’ve been to one of our restaurants, you’ve seen – and <br/>tasted – what keeps our customers coming back for more. <br/>Perfect materials and freshly baked food, delicious Lambda <br/>cakes,  muffins, and gourmet coffees make us hard to resist! <br/>Stop in today and check us out!</p>
+                <p>If you’ve been to one of our restaurants, you’ve seen – and <br/>
+                    tasted – what keeps our customers coming back for more. <br/>
+                    Perfect materials and freshly baked food, delicious Lambda <br/>
+                    cakes,  muffins, and gourmet coffees make us hard to resist! <br/>
+                    Stop in today and check us out!</p>
             </div>
-            <div>
-                <img src="img/image1.png" alt="">
-                <img src="img/image2.png" alt="">
-                <img src="img/image3.png" alt="">
+            <div class="secFine_ingredients--img">
+                <img src="img/fig1.jpg" alt="">
+                <img src="img/fig2.jpg" alt="">
+                <img src="img/fig3.jpg" alt="">
             </div>
         </div>
     </section>
-    <section>
+    <section id="See_the_menu" class="secMenu">
         <!-- left col -->
         <div class="sheetMenu">
             <div class="rowMenu">
                 <h3>Appetisers</h3>
-                <div class="divider">
-                    <img src="img/Divider.png" alt="">
-                </div>
                 <div class="posSheet">
                     <div class="infoMenu">
                         <div>
@@ -119,9 +113,6 @@
             </div>
             <div class="rowMenu">
                 <h3>Salads</h3>
-                <div class="divider">
-                    <img src="img/Divider.png" alt="">
-                </div>
                 <div class="posSheet">
                     <div class="infoMenu">
                         <div>
@@ -164,9 +155,6 @@
         <div class="sheetMenu">
             <div class="rowMenu">
                 <h3>Starters</h3>
-                <div class="divider">
-                    <img src="img/Divider.png" alt="">
-                </div>
                 <div class="posSheet">
                     <div class="infoMenu">
                         <div>
@@ -192,9 +180,6 @@
             </div>
             <div class="rowMenu">
                 <h3>Main Dishes</h3>
-                <div class="divider">
-                    <img src="img/Divider.png" alt="">
-                </div>
                 <div class="posSheet">
                     <div class="infoMenu">
                         <div>
@@ -245,73 +230,79 @@
             </div>                    
         </div>
     </section>
-    <section>
+    <section class="secGuest_rev">
         <div>
             <h3>Guest Reviews</h3>
-            <div class="divider">
-                <img src="img/Divider2.png" alt="">
-            </div>
             <div>
-                <p>If you’ve been to one of our restaurants, you’ve seen – and <br/>tasted – what keeps our customers coming back for more. <br/>Perfect materials and freshly baked food, delicious Lambda <br/>cakes,  muffins, and gourmet coffees make us hard to resist! <br/>Stop in today and check us out!</p>
+                <p>If you’ve been to one of our restaurants, you’ve seen – and <br/>
+                    tasted – what keeps our customers coming back for more. <br/>
+                    Perfect materials and freshly baked food, delicious Lambda <br/>
+                    cakes,  muffins, and gourmet coffees make us hard to resist! <br/>
+                    Stop in today and check us out!</p>
                 <h6>-food inc, New York</h6>
             </div>
         </div>
     </section>
-    <section>
+    <section id="Book_a_table" class="secBook_a_table">
         <div>
             <img src="img/underFooter.jpg" alt="">
         </div>
         <div>
             <img src="img/underFooter1.jpg" alt="">
         </div>
-        <div>
+        <div class="secBook_a_table--bookForm">
             <h3>Just the right food</h3>
-            <div class="divider">
-                <img src="img/Divider.png" alt="">
-            </div>
             <div>
-                <p>If you’ve been to one of our restaurants, you’ve seen – and <br/>tasted – what keeps our customers coming back for more. <br/>Perfect materials and freshly baked food.<br/><br/>
-                    Delicious Lambda cakes,  muffins, and gourmet coffees make <br/>us hard to resist! Stop in today and check us out! Perfect <br/>materials and freshly baked food.</p>
+                <p>If you’ve been to one of our restaurants, you’ve seen – and <br/>
+                    tasted – what keeps our customers coming back for more. <br/>
+                    Perfect materials and freshly baked food.<br/><br/>
+                    Delicious Lambda cakes,  muffins, and gourmet coffees make <br/>
+                    us hard to resist! Stop in today and check us out! Perfect <br/>
+                    materials and freshly baked food.</p>
                 
             </div>
             <form name = "callBack" method = "post" action="#"> 
                 <div class="rowInput">
                     <div class="colInput">
-                        <span>Name</span>
-                        <input name="name" type="text" required placeholder="your name *">
+                        <label for="nameInput">Name</label>
+                        <input id="nameInput" name="name" type="text" required placeholder="your name *">
                     </div>
                     <div class="colInput">
-                        <span>Email</span>
-                        <input name="email" type="email" required placeholder="your email *">
+                        <label for="emailInput">Email</label>
+                        <input id="emailInput" name="email" type="email" required placeholder="your email *">
                     </div>
                 </div>
                 <div class="rowInput">
                     <div class="colInput">
-                        <span>Date</span>
+                        <label for="dateInput">Date</label>
                         <div class="superDate">
-                            <input name="date" type="text" placeholder="date *" class="inputDate">
-                            <input type="date" class="iconDate">
+                            <input id="setDate" name="date" type="text" placeholder="date *" class="inputDate">
+                            <input type="date" id="getDate" class="iconDate" onchange="datePost()">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="colInput">
-                        <span>Party number</span>
-                        <input type="number" required placeholder="party number *">
+                        <label for="numberInput">Party number</label>
+                        <input id="numberInput" type="number" required placeholder="party number *">
                     </div>
                 </div>
                 <div class="rowInput">
-                    <input type="button" value="Book now!">
+                    <input type="submit" value="Book now!">
                 </div>
             </form>
         </div>
     </section>
     <footer>
-        <div>
+        <div class="secFooter--aboutUs">
             <h5>About Us</h5>
             <img src="img/Divider2.png" alt="">
-            <p>Lambda's new and expanded Chelsea location <br/>represents a truly authentic <strong>Greek</strong> patisserie, <br/>featuring breakfasts of fresh croissants and <br/>steaming bowls of café. <br/>Lamda the best restaurant in town</p>
+            <p>Lambda's new and expanded Chelsea location <br/>
+                represents a truly authentic <strong>Greek</strong> patisserie, <br/>
+                featuring breakfasts of fresh croissants and <br/>
+                steaming bowls of café. <br/>
+                Lamda the best restaurant in town</p>
         </div>
-        <div>
+        <div class="secFooter--openingHours">
             <h5>Opening Hours</h5>
             <img src="img/Divider2.png" alt="">
             <p><strong>Mon-Thu:</strong> 7:00am-8:00pm<br/><strong>Fri-Sun:</strong> 7:00am-10:00pm</p>
@@ -322,7 +313,7 @@
                 <a href="#"><i class="fa fa-cc-stripe" aria-hidden="true"></i></a>
             </div>
         </div>
-        <div>
+        <div class="secFooter--ourLocation">
             <h5>Our Location</h5>
             <img src="img/Divider2.png" alt="">
             <p><strong>19th Paradise Street Sitia<br/>128 Meserole Avenue</strong></p>
@@ -333,17 +324,7 @@
                 <a href="#"><i class="fa fa-stop" aria-hidden="true"></i></a>
             </div>
         </div>
-        <div></div>
     </footer>   
 </body>
-<script>
-    function datePost(){
-        var a = document.getElementsByClassName('iconDate');
-        
-        if(a[0].value != ''){
-            var b = document.getElementsByClassName('inputDate');
-            b[0].placeholder = a[0].value;
-        }
-    }
-</script>
+<script type="text/javascript" src="js/changeDate.js"></script> 
 </html>
